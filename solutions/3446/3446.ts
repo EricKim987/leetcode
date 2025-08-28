@@ -26,7 +26,6 @@ export function sortMatrix(grid: number[][]): number[][] {
       y += dir[1];
     }
     temp.sort((a,b) => a-b);
-    console.log({temp})
     for (const [index, value] of temp.entries()) {
       result[index][j +index] = value;
     }
